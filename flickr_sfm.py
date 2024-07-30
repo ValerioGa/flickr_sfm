@@ -325,7 +325,7 @@ if __name__ == "__main__":
             Q = np.array(rows[i].split(' ')[1:5], float)
             R = qvec2rotmat(Q)
             T = np.array([rows[i].split(' ')[5:8]], float)
-            K = np.array([[cameras_dict[camera_id][0], cameras_dict[camera_id][7].replace('\n', '') , cameras_dict[camera_id][1]],
+            K = np.array([[cameras_dict[camera_id][0], cameras_dict[camera_id][3].replace('\n', '') , cameras_dict[camera_id][1]],
                             [0, cameras_dict[camera_id][0], cameras_dict[camera_id][2]],
                             [0, 0, 1]], float)
             
